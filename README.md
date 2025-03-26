@@ -12,14 +12,15 @@
 ```bash
 sudo apt update
 sudo apt install screen
-Basic Commands
-Session Management
-Command	Description
-screen -S <name>	Create new named session
-screen -r <name>	Reattach to existing session
-screen -r <pid>	Reattach by process ID
-screen -ls	List all active sessions
-screen -d <name>	Detach a running session remotely
-screen -D <name>	Force detach (disconnect if attached elsewhere)
-screen -x	Attach to shared session (multi-user mode)
-screen -wipe	Clean up dead sessions
+```
+## To view all active sessions, enter the command:
+```bash
+screen -ls
+```
+Create a session:
+```bash
+screen -S <name>
+```
+## Restoring a named session:
+```bash
+screen -r <name>
